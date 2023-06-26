@@ -1,37 +1,66 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Mi Primer Website</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/style.css">
-  </head>
-  <body>
-    <div class="container">
-        <h1>Bienvenidos a mi primer Website!</h1>
-        <div class="row">
-            <div class="column">
-                <h2>Un Subtitulo en h2</h2>
-                <p>Soy Ponchox, ¡y esta es mi primera página web!</p>
-                <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.</p>
-                <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.
-                </p>
-            </div>
-            <div class="column">
-              <h2>Otro Subtitulo en h2</h2>
-              <p>Soy Ponchox, ¡y esta es mi primera página web!</p>
-              <p>Estoy aprendiendo desarrollo web para crear sitios web visualmente atrapantes y funcionales.</p>
-              <p>A lo largo de este curso, estaré aprendiendo HTML, CSS y JavaScript. Estos lenguajes me ayudarán a crear una base sólida en el desarrollo web front-end.
-              </p>
-            </div>
-          <button onclick="showAlert()">Click Aqui</button>
-        </div>
-        <form id="myForm">
-          <label for="email">Correo electrónico:</label>
-          <input type="email" id="email" name="email" required>
-          <button type="submit">Enviar</button>
-        </form>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoIPNet - Telecomunicaciones</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="IMG/voipnet-logo.png" alt="Logo de VoIPNet">
     </div>
-    <script src="JS/scrip.js"></script>
-  </body>
+    <nav>
+      <div class="mobile-menu">
+        <button class="menu-toggle" aria-label="Toggle Menu">
+          <span class="menu-icon"></span>
+        </button>
+        <ul class="menu">
+          <li><a href="home.html">Inicio</a></li>
+          <li><a href="quienes-somos.html">Quienes Somos</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="content">
+      <!-- Contenido dinámico cargado mediante los enlaces -->
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="column">
+        <div class="footer-logo">
+          <img src="IMG/voipnet-logo-bw.png" alt="Logo de VoIPNet en blanco y negro">
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-info">
+          <h3>Datos de Contacto</h3>
+          <p>Teléfono: +123456789</p>
+          <p>Email: info@voipnet.com</p>
+          <p>Dirección: Av. Principal 123, Ciudad, País</p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="footer-sitemap">
+          <h3>Sitemap</h3>
+          <ul>
+            <li><a href="home.html">Inicio</a></li>
+            <li><a href="quienes-somos.html">Quienes Somos</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="JS/script.js" defer></script>
+</body>
 </html>
