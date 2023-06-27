@@ -4,12 +4,17 @@ body {
   font-family: Arial, sans-serif;
 }
 
+#content {
+  height: 55vh;
+}
+
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
   display: flex;
   align-items: center;
+  padding: 20px 180px 10px 40px;
 }
 
 nav ul {
@@ -36,7 +41,7 @@ nav ul li a {
 }
 
 section {
-  padding: 50px;
+  padding: 50px 150px;
 }
 
 h1, h2 {
@@ -77,15 +82,16 @@ button {
 
 /* Estilos del logo */
 .logo img {
-  max-width: 150px;
+  max-width: 200px;
   height: auto;
+  margin-left: 100px;
 }
 
 /* Estilos del footer */
 footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
+  padding: 20px 180px 40px 180px;
 }
 
 .footer-content {
@@ -100,6 +106,7 @@ footer {
 
 .footer-content li {
   list-style: none;
+  margin-left: -50px;
 }
 
 .footer-content a {
@@ -123,7 +130,7 @@ footer {
 }
 
 .footer-logo img {
-  max-width: 100px;
+  max-width: 300px;
   height: auto;
 }
 
