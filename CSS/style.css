@@ -63,20 +63,7 @@ button {
   cursor: pointer;
 }
 
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-.footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
+/* Resto de tus estilos CSS existentes */
 
 .contact-info, .sitemap {
   flex-basis: 50%;
@@ -88,119 +75,10 @@ footer {
   margin-bottom: 10px;
 }
 
-.footer-logo {
-  text-align: center;
-  margin-top: 20px;
-}
-
-.footer-logo img {
-  max-width: 100px;
-}
-
 /* Estilos del logo */
 .logo img {
   max-width: 150px;
   height: auto;
-}
-
-/* Estilos del header */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.menu-icon {
-  display: block;
-  width: 20px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 4px;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu-icon.open {
-  transform: rotate(45deg);
-}
-
-.menu-icon.open:before,
-.menu-icon.open:after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.menu-icon:before,
-.menu-icon:after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #fff;
-  position: absolute;
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu-icon:before {
-  top: -6px;
-}
-
-.menu-icon:after {
-  top: 6px;
-}
-
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-}
-
-/* Estilos del menú responsive */
-.mobile-menu {
-  display: flex;
-  align-items: center;
-}
-
-.menu {
-  display: none;
-}
-
-.menu.active {
-  display: flex;
-  flex-direction: column;
-  background-color: #333;
-  padding: 20px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  transform: translateY(-100%);
-  transition: transform 0.3s ease-in-out;
-}
-
-.menu li {
-  margin-bottom: 10px;
-}
-
-.menu a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /* Estilos del footer */
@@ -212,6 +90,7 @@ footer {
 
 .footer-content {
   display: flex;
+  justify-content: space-between;
 }
 
 .column {
@@ -219,27 +98,28 @@ footer {
   margin-right: 20px;
 }
 
-.footer-sitemap h3,
-.footer-info h3 {
-  color: #fff;
-}
-
-.footer-sitemap ul {
+.footer-content li {
   list-style: none;
-  padding: 0;
 }
 
-.footer-sitemap ul li {
-  margin-bottom: 5px;
-}
-
-.footer-sitemap ul li a {
+.footer-content a {
   color: #fff;
   text-decoration: none;
+  padding: 10px;
 }
 
-.footer-info p {
+.footer-info h3,
+.footer-sitemap h3 {
+  color: #fff;
+}
+
+.footer-info p,
+.footer-sitemap ul {
   margin: 0;
+}
+
+.footer-logo {
+  text-align: right;
 }
 
 .footer-logo img {
@@ -247,61 +127,3 @@ footer {
   height: auto;
 }
 
-/* Estilos para dispositivos móviles */
-@media (max-width: 768px) {
-  .menu-toggle {
-    display: block;
-  }
-
-  .menu-icon {
-    position: relative;
-    z-index: 1;
-    background-color: #fff;
-  }
-
-  .menu-icon:before,
-  .menu-icon:after {
-    background-color: #fff;
-  }
-
-  .menu-icon.open:before {
-    top: 0;
-    transform: rotate(45deg);
-  }
-
-  .menu-icon.open:after {
-    top: 0;
-    transform: rotate(-45deg);
-  }
-
-  .menu-icon.open:before,
-  .menu-icon.open:after {
-    width: 80%;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  .menu.active {
-    display: flex;
-    flex-direction: column;
-    background-color: #333;
-    padding: 20px;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
-  }
-
-  .menu li {
-    margin-bottom: 10px;
-  }
-
-  .menu a {
-    color: #fff;
-    text-decoration: none;
-  }
-}
